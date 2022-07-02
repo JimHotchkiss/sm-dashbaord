@@ -1,0 +1,13 @@
+.navigation__container {
+    width: 180px;
+    height: 800px;
+    background-color: var(--third-color);
+}
+
+
+/* Mobile */
+@media (max-width: 576px) {
+    .navigation__container {
+        width: 100%;
+    }
+}

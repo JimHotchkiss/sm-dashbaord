@@ -1,0 +1,6 @@
+.icon__container {
+    height: 30px;
+    width: 120px;
+    background: transparent url(./images/logo-stryker.svg) 0% 0% no-repeat padding-box;
+    background-size: 90px;
+}

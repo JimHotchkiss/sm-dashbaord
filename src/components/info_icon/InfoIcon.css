@@ -1,0 +1,7 @@
+
+.info_icon__container {
+    height: 20px;
+    width: 20px;
+    background: transparent url(./images/icon-info.svg) 0% 0% no-repeat padding-box;
+    background-size: 20px;
+}
