@@ -1,9 +1,14 @@
 .sidebar__container {
+    display: flex;
+    justify-content: center;
     width: 60px;
-    height: 738px;
+    height: inherit;
     background: var(--secondary-color);
 }
 
+.sidebar__home_icon {
+    margin-top: 24px;
+}
 
 /* Mobile */
 @media (max-width: 576px) {

@@ -14,13 +14,11 @@
 }
 
 .header__stryker_icon {
-    padding-top: 20px;
-    /* margin-left: 5%; */
+    margin-top: 20px;
 }
 
 .header__info_icon {
-    padding-top: 22px;
-    /* margin-right: 32px; */
+    margin-top: 22px;
 }
 
 .header__info_icon:hover {
@@ -28,8 +26,8 @@
 }
 
 /* XL Desktops*/
-@media (max-width: 1440px) {
-    .header__home_icon {
+@media (max-width: 1920px) {
+    .header__home_icon_mobile {
         display: none;
     }
     
@@ -40,9 +38,9 @@
     .header__info_icon {
         display: none;
     }
-    .header__home_icon {
+    .header__home_icon_mobile {
         display: block;
-        margin-top: -4px;
+        margin-top: 12px;
         margin-right: 18px;
     }
     

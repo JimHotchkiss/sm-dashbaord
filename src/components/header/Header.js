@@ -15,7 +15,7 @@ const Header = () => {
             <div className='header__info_icon'>
               <InfoIcon />
             </div>
-            <div className='header__home_icon'>
+            <div className='header__home_icon_mobile'>
               <HomeIcon />
             </div>
           </div>

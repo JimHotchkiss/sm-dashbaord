@@ -1,6 +1,6 @@
 .navigation__container {
     width: 180px;
-    height: 800px;
+    height: inherit;
     background-color: var(--third-color);
 }
 
