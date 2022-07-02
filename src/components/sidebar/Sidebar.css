@@ -3,7 +3,14 @@
     justify-content: center;
     width: 60px;
     height: inherit;
-    background: var(--secondary-color);
+    background: var(--color-1);
+}
+
+.sidebar_navigation__container {
+    display: flex;
+    flex-direction: row;
+
+    height: inherit
 }
 
 .sidebar__home_icon {

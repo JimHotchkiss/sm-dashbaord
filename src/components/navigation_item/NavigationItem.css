@@ -1,0 +1,37 @@
+.navigation_item__container {
+    display: flex;
+    flex-direction: column;
+    height: 39px;
+    width: 92%;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.3);
+} 
+
+.navigation_item__container:hover {
+    cursor: pointer;
+} 
+
+
+.navigation_item__text_chevron_div {
+    display: flex;
+    gap: 22px;
+}
+
+.navigation_item__container p {
+    font-family: 'Roboto';
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-4);
+
+    margin-left: 12px;
+}
+
+.navigation_item__chevron {
+    height: 20px;
+    width: 15px;
+    margin-top: 10px;
+    margin-left: auto;
+    background: transparent url(./images/icon-arrow.svg) 0% 0% no-repeat padding-box;
+    background-size: 18px;
+
+
+}

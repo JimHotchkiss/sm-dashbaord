@@ -1,10 +1,4 @@
 .app__container {
+    /* height: 884px; */
     height: 100vh;
-}
-
-.sidebar_navigation__container {
-    display: flex;
-    flex-direction: row;
-
-    height: inherit
 }
