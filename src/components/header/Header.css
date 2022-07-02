@@ -20,3 +20,11 @@
 .header__info_icon:hover {
     cursor: pointer;
 }
+
+/* Mobile */
+@media (max-width: 576px) {
+    .header__info_icon {
+        display: none;
+    }
+    
+}
