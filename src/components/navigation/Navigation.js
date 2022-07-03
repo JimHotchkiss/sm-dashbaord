@@ -928,8 +928,9 @@ const Navigation = () => {
   }
   ], body: 'Body 13', id: 13
 }]},{featureName: "Arthro Specs", categories:[{ name: 'Capital'}, { name: 'Disposables'}, { name: 'Replacement Parts'}], id: 3, productList: [
-    { productName: 'Arthro Spec One', categories:[{ name: 'Capital'}, { name: 'Disposables'}, { name: 'Replacement Parts'}], id: 1},
-    { productName: 'Arthro Spec Two', categories:[{ name: 'Capital'}, { name: 'Disposables'}, { name: 'Replacement Parts'}], id: 2},
+    { productName: 'Suction Probe', categories:[{ name: 'Capital'}, { name: 'Disposables'}, { name: 'Replacement Parts'}], id: 1},
+    { productName: 'Non-Suction Probe', categories:[{ name: 'Capital'}, { name: 'Disposables'}, { name: 'Replacement Parts'}], id: 2},
+    { productName: 'Small Joint Probe', categories:[{ name: 'Capital'}, { name: 'Disposables'}, { name: 'Replacement Parts'}], id: 2}
 ]}])
 
   return (

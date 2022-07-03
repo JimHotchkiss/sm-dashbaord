@@ -18,7 +18,7 @@ const NavigationItem = ({ name, categories }) => {
         </div>
         <div className={click ? 'navigation_item__items_show' : 'navigation_item__items_hide'}>
             {categories.map((category) => (
-                 <div className='navigation_item__items_text'>
+                 <div key={Math.random()} className='navigation_item__items_text'>
                     <p>{category.name}</p>
                 </div>
             ))}
