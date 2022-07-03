@@ -1,8 +1,8 @@
 .navigation__container {
-    width: 180px;
+    width: 300px;
     height: inherit;
     background-color: var(--color-2);
-    z-index: 999;
+    overflow: scroll;
 }
 
 

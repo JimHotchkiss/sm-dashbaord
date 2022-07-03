@@ -8,13 +8,16 @@ const Navigation = () => {
 
   const [features, setFeatures] = useState([
     { featureName: 'Capital Products', id: 1,  productList: [
-      { productName: 'Capital One', body: 'Product One body', id: 1},
-      { productName: 'Capital Two', body: 'Product One body', id: 2},
-      { productName: 'Capital Three', body: 'Product One body', id: 3}
-  ]}, {featureName: "Implant Families", id: 2, productList: [
-      { productName: 'Implant Family One', id: 1},
-      { productName: 'Implant Family Two', id: 2},
-  ]}])
+      { productName: 'Adaptable Beach Chair', categories:[{ name: 'Capital'}, { name: 'Disposables'}, { name: 'Replacement Parts'}], body: 'Product One body', id: 1},
+      { productName: 'Alphavent', categories:[{ name: 'Capital'}, { name: 'Disposables'}, { name: 'Replacement Parts'}], body: 'Product One body', id: 2},
+      { productName: 'Adaptable Arm Positioner', categories:[{ name: 'Capital'}, { name: 'Disposables'}, { name: 'Replacement Parts'}], body: 'Product One body', id: 3}
+  ]}, {featureName: "Implant Families", categories:[{ name: 'Capital'}, { name: 'Disposables'}, { name: 'Replacement Parts'}], id: 2, productList: [
+      { productName: 'Implant Family One', categories:[{ name: 'Capital'}, { name: 'Disposables'}, { name: 'Replacement Parts'}], id: 1},
+      { productName: 'Implant Family Two', categories:[{ name: 'Capital'}, { name: 'Disposables'}, { name: 'Replacement Parts'}],  id: 2},
+  ]},{featureName: "Arthro Specs", categories:[{ name: 'Capital'}, { name: 'Disposables'}, { name: 'Replacement Parts'}], id: 3, productList: [
+    { productName: 'Arthro Spec One', categories:[{ name: 'Capital'}, { name: 'Disposables'}, { name: 'Replacement Parts'}], id: 1},
+    { productName: 'Arthro Spec Two', categories:[{ name: 'Capital'}, { name: 'Disposables'}, { name: 'Replacement Parts'}], id: 2},
+]}])
 
   return (
     <div className='navigation__container'>
@@ -24,3 +27,4 @@ const Navigation = () => {
 }
 
 export default Navigation
+

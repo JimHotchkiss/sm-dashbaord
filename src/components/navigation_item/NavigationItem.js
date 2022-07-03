@@ -1,7 +1,7 @@
 import {React, useState} from 'react'
 import './NavigationItem.css'
 
-const NavigationItem = ({ name }) => {
+const NavigationItem = ({ name, categories }) => {
 
     const [click, setClick] = useState(false)
 
@@ -17,15 +17,11 @@ const NavigationItem = ({ name }) => {
             <div className={click ? 'navigation_item__chevron' : 'navigation_item__chevron_rotate'}></div>
         </div>
         <div className={click ? 'navigation_item__items_show' : 'navigation_item__items_hide'}>
-            <div className='navigation_item__items_text'>
-                <p>Item One</p>
-            </div>
-            <div className='navigation_item__items_text'>
-                <p>Item One</p>
-            </div>
-            <div className='navigation_item__items_text'>
-                <p>Item One</p>
-            </div>
+            {categories.map((category) => (
+                 <div className='navigation_item__items_text'>
+                    <p>{category.name}</p>
+                </div>
+            ))}
         </div>
     </div>
   )

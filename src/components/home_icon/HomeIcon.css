@@ -2,20 +2,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     background-color: var(--color-3);
     border-radius: 50%;
+    transition: all 0.3s ease-in-out;
 }
 
 .home_icon__container:hover {
     cursor: pointer;
+    border-radius: 30%;
+    background-color: var(--color-4);
+    transition: all 0.3s ease-in-out;
 }
 
 .home_icon__image {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     background: transparent url(./images/icon-home.svg) 0% 0% no-repeat padding-box;
     opacity: 1;
-    background-size: 24px;
+    background-size: 28px;
 }
