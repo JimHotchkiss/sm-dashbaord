@@ -1,4 +1,4 @@
 .app__container {
-    /* height: 884px; */
-    height: 100vh;
+    /* The calc() corrects for the scroll bar bug */
+    height: calc(100vh - 60px);
 }

@@ -1,16 +1,31 @@
-import React from 'react'
+import {React, useState} from 'react'
 import './NavigationItem.css'
 
 const NavigationItem = ({ name }) => {
+
+    const [click, setClick] = useState(false)
+
+    const handleClick = () => {
+        setClick(!click)
+    }
   return (
     <div className='navigation_item__container'>
-        <div className='navigation_item__text_chevron_div'>
+        <div onClick={handleClick}  className='navigation_item__text_chevron_div'>
             <div className='navigation_item__text'>
                 <p>{name}</p>
             </div>
-            <div className='navigation_item__chevron'></div>
+            <div className={click ? 'navigation_item__chevron' : 'navigation_item__chevron_rotate'}></div>
         </div>
-        <div className='navigation_item__items'>
+        <div className={click ? 'navigation_item__items_show' : 'navigation_item__items_hide'}>
+            <div className='navigation_item__items_text'>
+                <p>Item One</p>
+            </div>
+            <div className='navigation_item__items_text'>
+                <p>Item One</p>
+            </div>
+            <div className='navigation_item__items_text'>
+                <p>Item One</p>
+            </div>
         </div>
     </div>
   )
