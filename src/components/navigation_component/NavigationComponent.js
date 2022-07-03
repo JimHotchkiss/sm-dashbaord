@@ -6,8 +6,8 @@ const NavigationComponent = ({ features }) => {
   return (
     <div className='navigation_component__container'>
         {features.map((feature) => (
-
             <div key={feature.id}>
+                {console.log(feature)}
                 <div className='navigation_title__div'>
                     <NavigationTitle name={feature.featureName}/>
                 </div>

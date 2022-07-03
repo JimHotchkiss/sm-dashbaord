@@ -6,8 +6,9 @@ const NavigationItem = ({ name, categories }) => {
     const [click, setClick] = useState(false)
 
     const handleClick = () => {
-        setClick(!click)
+       setClick(!click)
     }
+
   return (
     <div className='navigation_item__container'>
         <div onClick={handleClick}  className='navigation_item__text_chevron_div'>

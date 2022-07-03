@@ -1,6 +1,6 @@
 import {React, useState} from 'react'
 import './Navigation.css'
-import NavigationComponent from '../navigation_component/NavigationComponent'
+import NavigationComponent from '../../components/navigation_component/NavigationComponent'
 
 
 
@@ -928,9 +928,211 @@ const Navigation = () => {
   }
   ], body: 'Body 13', id: 13
 }]},{featureName: "Arthro Specs", categories:[{ name: 'Capital'}, { name: 'Disposables'}, { name: 'Replacement Parts'}], id: 3, productList: [
-    { productName: 'Suction Probe', categories:[{ name: 'Capital'}, { name: 'Disposables'}, { name: 'Replacement Parts'}], id: 1},
-    { productName: 'Non-Suction Probe', categories:[{ name: 'Capital'}, { name: 'Disposables'}, { name: 'Replacement Parts'}], id: 2},
-    { productName: 'Small Joint Probe', categories:[{ name: 'Capital'}, { name: 'Disposables'}, { name: 'Replacement Parts'}], id: 2}
+    { productName: 'Suction Probe', categories:[
+      {
+        name: "90-S Cruise",
+        // "pn": "0279401200",
+        // "suction": true,
+        // "small_joint":false,
+        // "length": "135 mm",
+        // "outer_diameter": "4.0 mm",
+        // "cut_max": "11",
+        // "cut_default": "9",
+        // "coag": "4"
+     },
+    {
+           name: "90-S Accelerator",
+          //  "pn": "0279351400",
+          //  "suction": true,
+          //  "small_joint":false,
+          //  "length": "135 mm",
+          //  "outer_diameter": "4.0 mm",
+          //  "cut_max": "11",
+          //  "cut_default": "9",
+          //  "coag": "4"
+        },
+    {
+          name: "90-S Max",
+          //  "pn": "0279401100",
+          //  "suction": true,
+          //  "small_joint":false,
+          //  "length": "135 mm",
+          //  "outer_diameter": "4.0 mm",
+          //  "cut_max": "11",
+          //  "cut_default": "9",
+          //  "coag": "5"
+        },
+
+        {
+           name: "90-S",
+          //  "pn": "0279351100",
+          //  "suction": true,
+          //  "small_joint":false,
+          //  "length": "135 mm",
+          //  "outer_diameter": "3.5 mm",
+          //  "cut_max": "11",
+          //  "cut_default": "9",
+          //  "coag": "4"
+        },
+        {
+           name: "90-S XL",
+          //  "pn": "0279350502",
+          //  "suction": true,
+          //  "small_joint":false,
+          //  "length": "180 mm",
+          //  "outer_diameter": "3.5 mm",
+          //  "cut_max": "7",
+          //  "cut_default": "5",
+          //  "coag": "3"
+        },
+        {
+          name: "50-S",
+          // "pn": "0279351250",
+          // "suction": true,
+          // "small_joint":false,
+          // "length": "135 mm",
+          // "outer_diameter": "3.5 mm",
+          // "cut_max": "11",
+          // "cut_default": "9",
+          // "coag": "3"
+       },
+       {
+          name: "50-S XL",
+          // "pn": "0279351235",
+          // "suction": true,
+          // "small_joint":false,
+          // "length": "180 mm",
+          // "outer_diameter": "3.5 mm",
+          // "cut_max": "11",
+          // "cut_default": "9",
+          // "coag": "3"
+       },
+       {
+          name: "30-S",
+          // "pn": "0279351230",
+          // "suction": true,
+          // "small_joint":false,
+          // "length": "135 mm",
+          // "outer_diameter": "3.5 mm",
+          // "cut_max": "11",
+          // "cut_default": "9",
+          // "coag": "3"
+       },
+       {
+          name: "50-S Sweep +",
+          // "pn": "0279351650",
+          // "suction": true,
+          // "small_joint":false,
+          // "length": "135 mm",
+          // "outer_diameter": "3.5 mm",
+          // "cut_max": "11",
+          // "cut_default": "7",
+          // "coag": "4"
+       },
+       {
+          name: "50-S Sweep + XL",
+          // "pn": "0279351653",
+          // "suction": true,
+          // "small_joint":false,
+          // "length": "180 mm",
+          // "outer_diameter": "3.5 mm",
+          // "cut_max": "11",
+          // "cut_default": "7",
+          // "coag": "4"
+       }
+    
+    ], id: 1},
+    { productName: 'Non-Suction Probe', categories:[
+      {
+        name: "Direct",
+        // "pn": "0279350401",
+        // "suction": false,
+        // "small_joint":false,
+        // "length": "135 mm",
+        // "outer_diameter": "3.5 mm",
+        // "cut_max": "6",
+        // "cut_default": "5",
+        // "coag": "3"
+     },
+     {
+        name: "Lat",
+        // "pn": "0279350201",
+        // "suction": false,
+        // "small_joint":false,
+        // "length": "135 mm",
+        // "outer_diameter": "3.5 mm",
+        // "cut_max": "8",
+        // "cut_default": "5",
+        // "coag": "3"
+     },
+     {
+        name: "Contour",
+        // "pn": "0279350301",
+        // "suction": false,
+        // "small_joint":false,
+        // "length": "135 mm",
+        // "outer_diameter": "3.5 mm",
+        // "cut_max": "7",
+        // "cut_default": "5",
+        // "coag": "3"
+     },
+     {
+        name: "Hook",
+        // "pn": "0279350501",
+        // "suction": false,
+        // "small_joint":false,
+        // "length": "135 mm",
+        // "outer_diameter": "3.5 mm",
+        // "cut_max": "7",
+        // "cut_default": "5",
+        // "coag": "3"
+     },
+     {
+        name: "Hook XL",
+        // "pn": "0279351103",
+        // "suction": false,
+        // "small_joint":false,
+        // "length": "180 mm",
+        // "outer_diameter": "3.5 mm",
+        // "cut_max": "11",
+        // "cut_default": "9",
+        // "coag": "4"
+     }
+    ], id: 2},
+    { productName: 'Small Joint Probe', categories:[
+      {
+        name: "Aardvark",
+        // "pn": "0279251101",
+        // "suction": null,
+        // "small_joint":true,
+        // "length": "135 mm",
+        // "outer_diameter": "2.5 mm",
+        // "cut_max": "6",
+        // "cut_default": "4",
+        // "coag": "3"
+     },
+      {
+        name: "Micro-Claw",
+        // "pn": "0279250101",
+        // "suction": null,
+        // "small_joint":true,
+        // "length": "135 mm",
+        // "outer_diameter": "2.5 mm",
+        // "cut_max": "6",
+        // "cut_default": "4",
+        // "coag": "3"
+     },
+     {
+        name: "Micro-Brush",
+        // "pn": "0279250201",
+        // "suction": null,
+        // "small_joint":true,
+        // "length": "135 mm",
+        // "outer_diameter": "2.5 mm",
+        // "cut_max": "6",
+        // "cut_default": "4",
+        // "coag": "3"
+     }], id: 2}
 ]}])
 
   return (

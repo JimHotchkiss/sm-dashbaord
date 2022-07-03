@@ -48,15 +48,19 @@
 .navigation_item__items_show {
     overflow-y: hidden;
     width: 100%;
-    max-height: 1000px;
-    transition: max-height .5s ease-in-out;
+    max-height: 590px;
+    transition: max-height .5s ease-in 0s;
 
 }
 
 .navigation_item__items_hide {
     overflow-y: hidden;
     max-height: 0px;
-    transition: max-height .5s ease-in-out;
+    transition: max-height .5s ease-in 0s;
+}
+
+.navigation_item__items_text {
+    transition: all 0.3s ease-in-out; 
 }
 
 .navigation_item__items_text {
@@ -65,17 +69,17 @@
     background-color: var(--color-5);
     border-radius: 5px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out; 
+    /* transition: all 0.3s ease-in-out;  */
 }
 
 .navigation_item__items_text:hover{
     background-color: var(--color-3);
-    transition: all 0.3s ease-in-out; 
+    /* transition: all 0.3s ease-in-out;  */
 }
 
 .navigation_item__items_text:hover p{
     color: #fff;
-    transition: all 0.3s ease-in-out; 
+    /* transition: all 0.3s ease-in-out;  */
 }
 
 .navigation_item__items_text p {
