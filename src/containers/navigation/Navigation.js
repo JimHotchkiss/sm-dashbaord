@@ -1135,9 +1135,24 @@ const Navigation = () => {
      }], id: 2}
 ]}])
 
+const handleBtnClick = (e) => {
+  const navigationItemItemsText = document.getElementsByClassName('navigation_item__items_text')
+
+  for (let item of navigationItemItemsText) {
+    if (item.classList.contains('clicked')) {
+      item.classList.remove('clicked')
+
+    }
+  }
+
+  e.currentTarget.classList.toggle('clicked')
+  // console.log(e.currentTarget)
+
+}
+
   return (
     <div className='navigation__container'>
-      <NavigationComponent features={features} />
+      <NavigationComponent handleBtnClick={handleBtnClick} features={features} />
     </div>
   )
 }

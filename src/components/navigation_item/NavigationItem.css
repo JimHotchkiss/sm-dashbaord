@@ -82,6 +82,17 @@
     /* transition: all 0.3s ease-in-out;  */
 }
 
+.navigation_item__items_text.clicked{
+    background-color: var(--color-3);
+    transition: all 0.3s ease-in-out; 
+}
+
+.navigation_item__items_text.clicked P{
+    color: #fff;
+    transition: all 0.3s ease-in-out; 
+}
+
+
 .navigation_item__items_text p {
     padding: 9px 3px;
 }

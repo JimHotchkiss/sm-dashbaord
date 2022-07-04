@@ -1,7 +1,7 @@
 import {React, useState} from 'react'
 import './NavigationItem.css'
 
-const NavigationItem = ({ name, categories }) => {
+const NavigationItem = ({ name, categories, handleBtnClick }) => {
 
     const [click, setClick] = useState(false)
 
@@ -11,7 +11,7 @@ const NavigationItem = ({ name, categories }) => {
 
   return (
     <div className='navigation_item__container'>
-        <div onClick={handleClick}  className='navigation_item__text_chevron_div'>
+        <div onClick={(e) => handleClick(e)}  className='navigation_item__text_chevron_div'>
             <div className='navigation_item__text'>
                 <p>{name}</p>
             </div>
@@ -19,7 +19,10 @@ const NavigationItem = ({ name, categories }) => {
         </div>
         <div className={click ? 'navigation_item__items_show' : 'navigation_item__items_hide'}>
             {categories.map((category) => (
-                 <div key={Math.random()} className='navigation_item__items_text'>
+                 <div 
+                    onClick={handleBtnClick}
+                    key={Math.random()} 
+                    className='navigation_item__items_text'>
                     <p>{category.name}</p>
                 </div>
             ))}

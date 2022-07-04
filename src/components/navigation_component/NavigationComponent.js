@@ -2,7 +2,7 @@ import React from 'react'
 import NavigationTitle from '../navigation_title/NavigationTitle'
 import NavigationItem from '../navigation_item/NavigationItem'
 
-const NavigationComponent = ({ features }) => {
+const NavigationComponent = ({ features, handleBtnClick }) => {
   return (
     <div className='navigation_component__container'>
         {features.map((feature) => (
@@ -13,7 +13,10 @@ const NavigationComponent = ({ features }) => {
                 </div>
                 {feature.productList.map((productItem) => (
                     <div className='navigation_item_div' key={productItem.id}>
-                         <NavigationItem categories={productItem.categories} name={productItem.productName}/>
+                         <NavigationItem 
+                            categories={productItem.categories} 
+                            name={productItem.productName}
+                            handleBtnClick={handleBtnClick}/>
                     </div>
                 ))}
             </div>
