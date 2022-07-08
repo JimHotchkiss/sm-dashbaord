@@ -9,16 +9,16 @@ const Navigation = () => {
   const [features, setFeatures] = useState([
     { 
       featureName: 'Capital Products', id: 1,  productList: [
-      { productName: 'Adaptable Beach Chair', categories:[{ name: 'Capital'}, { name: 'Disposables'}, { name: 'Replacement Parts'}], body: 'Product One body', id: 1},
-      { productName: 'Alphavent', categories:[{ name: 'Capital'}, { name: 'Disposables'}, { name: 'Replacement Parts'}], body: 'Product One body', id: 2},
-      { productName: 'Adaptable Arm Positioner', categories:[{ name: 'Capital'}, { name: 'Disposables'}, { name: 'Replacement Parts'}], body: 'Product One body', id: 3}
+      { productName: 'Adaptable Beach Chair', categories:[{ name: 'Capital', id:"a-1"}, { name: 'Disposables', id:"a-2"}, { name: 'Replacement Parts', id:"a-3"}], body: 'Product One body', id: 1},
+      { productName: 'Alphavent', categories:[{ name: 'Capital', id: 'a-4'}, { name: 'Disposables', id: 'a-5'}, { name: 'Replacement Parts', id: 'a-6'}], body: 'Product One body', id: 2},
+      { productName: 'Adaptable Arm Positioner', categories:[{ name: 'Capital', id:"a-7"}, { name: 'Disposables', id:"a-8"}, { name: 'Replacement Parts', id:"a-9"}], body: 'Product One body', id: 3}
   ]}, {
     featureName: "Implant Families", id: 2, productList: [
 {
   productName: "Iconix" , categories:[{
     name: "ICONIX 1",
     // "pn": "3910-500-512",
-    // "id":"3910-1",
+    id:"3910-1",
     // "img_url": "../images/iconix1.png",
     // "MATERIAL": "Polyester Suture (UHMWPE)",
     // "IMPLANT_LENGTH": "12mm \n(4.5mm  deployed)",
@@ -32,7 +32,7 @@ const Navigation = () => {
 {
     name: "ICONIX 1 with Needles",
     // "pn": "3910-500-412",
-    // "id":"3910-2",
+    id:"3910-2",
     // "img_url": "",
     // "MATERIAL": "Polyester Suture (UHMWPE)",
     // "IMPLANT_LENGTH": "8mm\n(4mm deployed)",
@@ -46,7 +46,7 @@ const Navigation = () => {
 {
     name: "ICONIX 1 TT",
     // "pn": "3910-500-312",
-    // "id":"3910-3",
+    id:"3910-3",
     // "img_url": "../images/iconix2.png",
     // "MATERIAL": "Polyester Suture (UHMWPE)",
     // "IMPLANT_LENGTH": "12mm \n(4.5mm  deployed)",
@@ -60,7 +60,7 @@ const Navigation = () => {
 {
     name: "ICONIX 1 TT \n with Needles",
     // "pn": "3910-500-212",
-    // "id":"3910-4",
+    id:"3910-4",
     // "img_url": "",
     // "MATERIAL": "Polyester Suture (UHMWPE)",
     // "IMPLANT_LENGTH": "8mm\n(4mm deployed)",
@@ -74,7 +74,7 @@ const Navigation = () => {
 {
     name: "ICONIX 2",
     // "pn": "3910-500-522",
-    // "id":"3910-5",
+    id:"3910-5",
     // "img_url": "",
     // "MATERIAL": "Polyester Suture (UHMWPE)",
     // "IMPLANT_LENGTH": "12mm \n(8mm  deployed)",
@@ -88,7 +88,7 @@ const Navigation = () => {
 {
     name: "ICONIX 2 \n with needles",
     // "pn": "3910-500-422",
-    // "id":"3910-6",
+    id:"3910-6",
     // "img_url": "",
     // "MATERIAL": "Polyester Suture (UHMWPE)",
     // "IMPLANT_LENGTH": "12mm\ndeployed - same as standard ICONIX 2",
@@ -102,7 +102,7 @@ const Navigation = () => {
 {
     name: "ICONIX 2 TT",
     // "pn": "3910-500-322",
-    // "id":"3910-7",
+    id:"3910-7",
     // "img_url": "",
     // "MATERIAL": "Polyester Suture (UHMWPE)",
     // "IMPLANT_LENGTH": "12mm \n(8mm  deployed)",
@@ -116,7 +116,7 @@ const Navigation = () => {
 {
     name: "ICONIX 2 TT \n with needles",
     // "pn": "3910-500-222",
-    // "id":"3910-8",
+    id:"3910-8",
     // "img_url": "",
     // "MATERIAL": "Polyester Suture (UHMWPE)",
     // "IMPLANT_LENGTH": "12mm\ndeployed - same as standard ICONIX 2",
@@ -130,7 +130,7 @@ const Navigation = () => {
 {
     name: "ICONIX 3",
     // "pn": "3910-500-532",
-    // "id":"3910-9",
+    id:"3910-9",
     // "img_url": "",
     // "MATERIAL": "Polyester Suture (UHMWPE)",
     // "IMPLANT_LENGTH": "12mm \n(8mm  deployed)",
@@ -144,7 +144,7 @@ const Navigation = () => {
 {
     name: "ICONIX 25",
     // "pn": "3910-500-525",
-    // "id":"3910-10",
+    id:"3910-10",
     // "img_url": "",
     // "MATERIAL": "Polyester Suture (UHMWPE)",
     // "IMPLANT_LENGTH": "12mm \n(8mm  deployed)",
@@ -161,7 +161,7 @@ const Navigation = () => {
   {
     name: "ICONIX SPEED Triple Loaded 1.2 mm Xbraid TT",
     // "pn": "3910-500-931",
-    // "id":"3910-11",
+    // id:"3910-11",
     // "img_url": "",
     // "MATERIAL": "Polyester Suture (UHMWPE)",
     // "IMPLANT_LENGTH": "12mm \n(8mm  deployed)",
@@ -175,7 +175,7 @@ const Navigation = () => {
   {
     name: "ICONIX SPEED Double Loaded 2.0mm Xbraid TT",
     // "pn": "3910-500-920",
-    // "id":"3910-12",
+    // id:"3910-12",
     // "img_url": "",
     // "MATERIAL": "Polyester Suture (UHMWPE)",
     // "IMPLANT_LENGTH": "12mm \n(8mm  deployed)",
@@ -189,7 +189,7 @@ const Navigation = () => {
   {
     name: "ICONIX SPEED Double Loaded #2 Force Fiber",
     // "pn": "3910-500-922",
-    // "id":"3910-13",
+    // id:"3910-13",
     // "img_url": "",
     // "MATERIAL": "Polyester Suture (UHMWPE)",
     // "IMPLANT_LENGTH": "12mm \n(8mm  deployed)",
@@ -203,7 +203,7 @@ const Navigation = () => {
   {
     name: "ICONIX SPEED Combo 1.2mm & 2.0mm Xbraid TT",
     // "pn": "3910-500-921",
-    // "id":"3910-14",
+    // id:"3910-14",
     // "img_url": "",
     // "MATERIAL": "Polyester Suture (UHMWPE)",
     // "IMPLANT_LENGTH": "12mm \n(8mm  deployed)",
@@ -221,7 +221,7 @@ const Navigation = () => {
    { 
     name: "CINCHLOCK FLEX",
     // "pn": "CAT02643",
-    // "id":"3910-15",
+    id:"3910-15",
     // "img_url": "",
     // "MATERIAL": "PEEK",
     // "IMPLANT_LENGTH": "12mm",
@@ -235,7 +235,7 @@ const Navigation = () => {
 {
     name: "CINCHLOCK SS",
     // "pn": "CAT02462",
-    // "id":"3910-16",
+    id:"3910-16",
     // "img_url": "",
     // "MATERIAL": "PEEK",
     // "IMPLANT_LENGTH": "12mm",
@@ -253,7 +253,7 @@ const Navigation = () => {
   {
     name: "NANOTACK",
     // "pn": "CAT01386",
-    // "id":"3910-17",
+    id:"3910-17",
     // "img_url": "",
     // "MATERIAL": "PEEK",
     // "IMPLANT_LENGTH": "7.5mm",
@@ -267,7 +267,7 @@ const Navigation = () => {
  {
   name: "NANOTACK FLEX",
   // "pn": "CAT01858",
-  // "id":"3910-18",
+  id:"3910-18",
   // "img_url": "",
   // "MATERIAL": "PEEK",
   // "IMPLANT_LENGTH": "7.5mm",
@@ -281,7 +281,7 @@ const Navigation = () => {
   {
     name: "NANOTACK TT",
     // "pn": "CAT02969",
-    // "id":"3910-19",
+    id:"3910-19",
     // "img_url": "",
     // "MATERIAL": "PEEK",
     // "IMPLANT_LENGTH": "7.5mm",
@@ -299,7 +299,7 @@ const Navigation = () => {
   {
     name: "REELX STT 4.5mm",
     // "pn": "3910-600-062",
-    // "id":"3910-20",
+    id:"3910-20",
     // "img_url": "",
     // "MATERIAL": "PEEK anchor body and Stainless Steel Core",
     // "IMPLANT_LENGTH": "17.5mm",
@@ -313,7 +313,7 @@ const Navigation = () => {
 {
     name: "REELX STT 5.5mm",
     // "pn": "3910-600-060",
-    // "id":"3910-21",
+    id:"3910-21",
     // "img_url": "",
     // "MATERIAL": "PEEK anchor body and Stainless Steel Core",
     // "IMPLANT_LENGTH": "19.4mm",
@@ -330,7 +330,7 @@ const Navigation = () => {
   {
     name: "Omega, 3.9mm PEEK Knotless Anchor System, Single",
     // "pn": "3910-500-391",
-    // "id":"3910-22",
+    id:"3910-22",
     // "img_url": "",
     // "MATERIAL": "PEEK",
     // "IMPLANT_LENGTH": "12.5mm",
@@ -344,7 +344,7 @@ const Navigation = () => {
 {
     name: "Omega, 3.9mm PEEK Knotless Anchor System, Double-Double",
     // "pn": "3910-500-392",
-    // "id":"3910-23",
+    id:"3910-23",
     // "img_url": "",
     // "MATERIAL": "PEEK",
     // "IMPLANT_LENGTH": "12.5mm",
@@ -358,7 +358,7 @@ const Navigation = () => {
 {
     name: "Omega, 4.75mm PEEK Knotless Anchor System, Single",
     // "pn":"3910-500-471",
-    // "id":"3910-24",
+    id:"3910-24",
     // "img_url": "",
     // "MATERIAL": "PEEK",
     // "IMPLANT_LENGTH": "14mm",
@@ -372,7 +372,7 @@ const Navigation = () => {
 {
     "name": "Omega, 4.75mm PEEK Knotless Anchor System, Double-Double",
     // "pn":"3910-500-472",
-    // "id":"3910-25",
+    id:"3910-25",
     // "img_url": "",
     // "MATERIAL": "PEEK",
     // "IMPLANT_LENGTH": "14mm",
@@ -386,7 +386,7 @@ const Navigation = () => {
 {
     "name": "Omega, 6.5mm PEEK Knotless Anchor + Eyelet, Single",
     // "pn": "3910-500-652",
-    // "id":"3910-26",
+    id:"3910-26",
     // "img_url": "",
     // "MATERIAL": "PEEK",
     // "IMPLANT_LENGTH": "14mm",
@@ -400,7 +400,7 @@ const Navigation = () => {
 {
     "name": "Omega, 6.5mm PEEK Knotless Anchor, Single",
     // "pn": "3910-500-653",
-    // "id":"3910-26a",
+    id:"3910-26a",
     // "img_url": "",
     // "MATERIAL": "PEEK",
     // "IMPLANT_LENGTH": "14mm",
@@ -417,7 +417,7 @@ const Navigation = () => {
     {
       name: "BIOSTEON INTRALINE ANCHOR 4.5mm - 2 suture \n without needles",
       // "pn": "3910-200-080",
-      // "id":"3910-27",
+      id:"3910-27",
       // "img_url": "",
       // "MATERIAL": "HA (25%)/PLLA (75%)\nhydroxyapatite and non-crystalline poly-L-lactide",
       // "IMPLANT_LENGTH": "10.8 mm",
@@ -431,7 +431,7 @@ const Navigation = () => {
   {
       name: "BIOSTEON INTRALINE ANCHOR 5.5mm - 2 suture \n with needles",
       // "pn": "3910-200-082",
-      // "id":"3910-27",
+      id:"3910-27",
       // "img_url": "",
       // "MATERIAL": "HA (25%)/PLLA (75%)\nhydroxyapatite and non-crystalline poly-L-lactide",
       // "IMPLANT_LENGTH": "10.8mm",
@@ -445,7 +445,7 @@ const Navigation = () => {
   {
       name: "BIOSTEON INTRALINE ANCHOR 5.5mm - 2 suture \n without needles",
       // "pn": "3910-200-081",
-      // "id":"3910-29",
+      id:"3910-29",
       // "img_url": "",
       // "MATERIAL": "HA (25%)/PLLA (75%)\nhydroxyapatite and non-crystalline poly-L-lactide",
       // "IMPLANT_LENGTH": "10.8mm",
@@ -459,7 +459,7 @@ const Navigation = () => {
   {
       name: "BIOSTEON INTRALINE ANCHOR 5.5mm - 3 suture \n without needles",
       // "pn": "3910-200-083",
-      // "id":"3910-30",
+      id:"3910-30",
       // "img_url": "",
       // "MATERIAL": "HA (25%)/PLLA (75%)\nhydroxyapatite and non-crystalline poly-L-lactide",
       // "IMPLANT_LENGTH": "10.8mm",
@@ -473,7 +473,7 @@ const Navigation = () => {
   {
       name: "BIOSTEON INTRALINE ANCHOR 6.5mm - 2 suture \n with needles",
       // "pn":"3910-200-085",
-      // "id":"3910-31",
+      id:"3910-31",
       // "img_url": "",
       // "MATERIAL": "HA/PLA\nhydroxyapatite and non-crystalline poly-L-lactide",
       // "IMPLANT_LENGTH": "10.8mm",
@@ -487,7 +487,7 @@ const Navigation = () => {
   {
       name: "BIOSTEON INTRALINE ANCHOR 6.5mm - 2 suture \n without needles",
       // "pn":"3910-200-084",
-      // "id":"3910-32",
+      id:"3910-32",
       // "img_url": "",
       // "MATERIAL": "HA/PLA\nhydroxyapatite and non-crystalline poly-L-lactide",
       // "IMPLANT_LENGTH": "10.8mm",
@@ -501,7 +501,7 @@ const Navigation = () => {
   {
       name: "BIOSTEON INTRALINE ANCHOR 6.5mm - 3 suture \n without needles",
       // "pn":"3910-200-086",
-      // "id":"3910-33",
+      id:"3910-33",
       // "img_url": "",
       // "MATERIAL": "HA/PLA\nhydroxyapatite and non-crystalline poly-L-lactide",
       // "IMPLANT_LENGTH": "10.8mm",
@@ -519,7 +519,7 @@ const Navigation = () => {
   {
     name: "KNOTILUS ANCHOR",
     // "pn": "3910-500-100",
-    // "id":"3910-34",
+    id:"3910-34",
     // "img_url": "",
     // "MATERIAL": "PEEK",
     // "IMPLANT_LENGTH": "10.5mm",
@@ -536,7 +536,7 @@ const Navigation = () => {
   {
     name: "PEEK ZIP, 5.5mm",
     // "pn": "3910-200-035",
-    // "id":"3910-35",
+    id:"3910-35",
     // "img_url": "",
     // "MATERIAL": "PEEK",
     // "IMPLANT_LENGTH": "13.5mm",
@@ -550,7 +550,7 @@ const Navigation = () => {
 {
     name: "PEEK ZIP, 5.5mm \n with needles ",
     // "pn": "3910-200-030",
-    // "id":"3910-36",
+    id:"3910-36",
     // "img_url": "",
     // "MATERIAL": "PEEK",
     // "IMPLANT_LENGTH": "13.5mm",
@@ -564,7 +564,7 @@ const Navigation = () => {
 {
     name: "PEEK ZIP, 6.5mm",
     // "pn":"3910-200-075",
-    // "id":"3910-37",
+    id:"3910-37",
     // "img_url": "",
     // "MATERIAL": "PEEK",
     // "IMPLANT_LENGTH": "13.5mm",
@@ -578,7 +578,7 @@ const Navigation = () => {
 {
     name: "PEEK ZIP, 6.5mm with needles",
     // "pn":"3910-200-070",
-    // "id":"3910-38",
+    id:"3910-38",
     // "img_url": "",
     // "MATERIAL": "PEEK",
     // "IMPLANT_LENGTH": "13.5mm",
@@ -595,7 +595,7 @@ const Navigation = () => {
   {
       name: "PEEK INTRALINE ANCHOR, 5.5mm",
       // "pn":"3910-400-010",
-      // "id":"3910-39",
+      id:"3910-39",
       // "img_url": "",
       // "MATERIAL": "PEEK",
       // "IMPLANT_LENGTH": "16.9mm",
@@ -609,7 +609,7 @@ const Navigation = () => {
   {
       name: "PEEK INTRALINE ANCHOR, 5.5mm \n with needles",
       // "pn":"3910-400-015",
-      // "id":"3910-40",
+      id:"3910-40",
       // "img_url": "",
       // "MATERIAL": "PEEK",
       // "IMPLANT_LENGTH": "16.9mm",
@@ -623,7 +623,7 @@ const Navigation = () => {
   {
       name: "PEEK INTRALINE ANCHOR, 6.5mm",
       // "pn":"3910-400-020",
-      // "id":"3910-41",
+      id:"3910-41",
       // "img_url": "",
       // "MATERIAL": "PEEK",
       // "IMPLANT_LENGTH": "16.9mm",
@@ -637,7 +637,7 @@ const Navigation = () => {
   {
       name: "PEEK INTRALINE ANCHOR, 6.5mm \n with needles",
       // "pn":"3910-400-025",
-      // "id":"3910-42",
+      id:"3910-42",
       // "img_url": "",
       // "MATERIAL": "PEEK",
       // "IMPLANT_LENGTH": "16.9mm",
@@ -655,7 +655,7 @@ const Navigation = () => {
     {
       name: "TWINLOOP - 1 No. 2 force fiber",
       // "pn": "3910-400-035",
-      // "id":"3910-43",
+      id:"3910-43",
       // "img_url": "",
       // "MATERIAL": "PEEK",
       // "IMPLANT_LENGTH": "10.5mm",
@@ -669,7 +669,7 @@ const Navigation = () => {
   {
       name: "TWINLOOP - SE 1 No. 2 force fiber",
       // "pn": "3910-400-135",
-      // "id":"3910-44",
+      id:"3910-44",
       // "img_url": "",
       // "MATERIAL": "PEEK",
       // "IMPLANT_LENGTH": "10.5mm",
@@ -683,7 +683,7 @@ const Navigation = () => {
   {
       name: "TWINLOOP - SE 2 No. 2 forcefiber",
       // "pn": "3910-400-235",
-      // "id":"3910-45",
+      id:"3910-45",
       // "img_url": "",
       // "MATERIAL": "PEEK",
       // "IMPLANT_LENGTH": "10.5mm",
@@ -697,7 +697,7 @@ const Navigation = () => {
   {
       name: "TWINLOOP FLEX - single strand",
       // "pn":"3910-405-638",
-      // "id":"3910-46",
+      id:"3910-46",
       // "img_url": "",
       // "MATERIAL": "PEEK",
       // "IMPLANT_LENGTH": "10.5mm",
@@ -711,7 +711,7 @@ const Navigation = () => {
   {
       name: "TWINLOOP FLEX - double strand",
       // "pn":"3910-405-838",
-      // "id":"3910-47",
+      id:"3910-47",
       // "img_url": "",
       // "MATERIAL": "PEEK",
       // "IMPLANT_LENGTH": "10.5mm",
@@ -725,7 +725,7 @@ const Navigation = () => {
   {
       name: "TWINLOOP FLEX - SE single strand",
       // "pn":"3910-405-738",
-      // "id":"3910-48",
+      id:"3910-48",
       // "img_url": "",
       // "MATERIAL": "PEEK",
       // "IMPLANT_LENGTH": "10.5mm",
@@ -743,7 +743,7 @@ const Navigation = () => {
     {
       name: "TITANIUM INTRALINE ANCHOR 5.5mm",
       // "pn":"3910-400-050",
-      // "id":"3910-49",
+      id:"3910-49",
       // "img_url": "",
       // "MATERIAL": "Titanium",
       // "IMPLANT_LENGTH": "17.1mm",
@@ -757,7 +757,7 @@ const Navigation = () => {
   {
       name: "TITANIUM INTRALINE ANCHOR 5.5mm with needles",
       // "pn":"3910-400-055",
-      // "id":"3910-50",
+      id:"3910-50",
       // "img_url": "",
       // "MATERIAL": "Titanium",
       // "IMPLANT_LENGTH": "17.1mm",
@@ -771,7 +771,7 @@ const Navigation = () => {
   {
       name: "TITANIUM INTRALINE ANCHOR 6.5mm",
       // "pn":"3910-400-060",
-      // "id":"3910-51",
+      id:"3910-51",
       // "img_url": "",
       // "MATERIAL": "Titanium",
       // "IMPLANT_LENGTH": "17.1mm",
@@ -785,7 +785,7 @@ const Navigation = () => {
   {
       name: "TITANIUM INTRALINE ANCHOR 6.5mm with needles",
       // "pn":"3910-400-065",
-      // "id":"3910-52",
+      id:"3910-52",
       // "img_url": "",
       // "MATERIAL": "Titanium",
       // "IMPLANT_LENGTH": "17.1mm",
@@ -803,7 +803,7 @@ const Navigation = () => {
     {
       name: "TITANIUM WEDGE ANCHOR, 6.5mm\nDouble strand with #2 braided polyester suture\n two independent sutures",
       // "pn":"3910-100-040",
-      // "id":"3910-53",
+      id:"3910-53",
       // "img_url": "",
       // "MATERIAL": "Titanium",
       // "IMPLANT_LENGTH": "12.4mm",
@@ -817,7 +817,7 @@ const Navigation = () => {
   {
       name: "TITANIUM WEDGE ANCHOR, 6.5mm\nDouble strand with #2 FF suture",
       // "pn":"3910-100-045",
-      // "id":"3910-54",
+      id:"3910-54",
       // "img_url": "",
       // "MATERIAL": "Titanium",
       // "IMPLANT_LENGTH": "12.4mm",
@@ -831,7 +831,7 @@ const Navigation = () => {
   {
       name: "TITANIUM WEDGE ANCHOR, 6.5mm\nDouble strand #2 sutures\n with needles",
       // "pn":"3910-100-145",
-      // "id":"3910-55",
+      id:"3910-55",
       // "img_url": "",
       // "MATERIAL": "Titanium",
       // "IMPLANT_LENGTH": "12.4mm",
@@ -845,7 +845,7 @@ const Navigation = () => {
   {
       name: "TITANIUM WEDGE ANCHOR, 5.0mm\nDouble strand with #2 braided polyester suture",
       // "pn":"3910-100-020",
-      // "id":"3910-56",
+      id:"3910-56",
       // "img_url": "",
       // "MATERIAL": "Titanium",
       // "IMPLANT_LENGTH": "10.2mm",
@@ -859,7 +859,7 @@ const Navigation = () => {
   {
       name: "TITANIUM WEDGE ANCHOR, 5.0mm\nDouble strand with #2 braided polyester suture\n two independent sutures",
       // "pn":"3910-100-030",
-      // "id":"3910-57",
+      id:"3910-57",
       // "img_url": "",
       // "MATERIAL": "Titanium",
       // "IMPLANT_LENGTH": "10.2mm",
@@ -873,7 +873,7 @@ const Navigation = () => {
   {
       name: "TITANIUM WEDGE ANCHOR, 5.0mm\nDouble strand with #2 FF suture",
       // "pn":"3910-100-035",
-      // "id":"3910-58",
+      id:"3910-58",
       // "img_url": "",
       // "MATERIAL": "Titanium",
       // "IMPLANT_LENGTH": "10.2mm",
@@ -887,7 +887,7 @@ const Navigation = () => {
   {
       name: "TITANIUM WEDGE ANCHOR, 5.0mm\nDouble strand with #2 FF suture\n with needles",
       // "pn":"3910-100-135",
-      // "id":"3910-59",
+      id:"3910-59",
       // "img_url": "",
       // "MATERIAL": "Titanium",
       // "IMPLANT_LENGTH": "10.2mm",
@@ -901,7 +901,7 @@ const Navigation = () => {
   {
       name: "TITANIUM WEDGE ANCHOR, 3.0mm\nSingle strand w/ #2 braided polyester suture",
       // "pn":"3910-100-010",
-      // "id":"3910-60",
+      id:"3910-60",
       // "img_url": "",
       // "MATERIAL": "Titanium",
       // "IMPLANT_LENGTH": "8.3mm",
@@ -915,7 +915,7 @@ const Navigation = () => {
   {
       name: "TITANIUM WEDGE ANCHOR, 3.0mm\nSingle strand w/ #2 FF",
       // "pn":"3910-100-015",
-      // "id":"3910-61",
+      id:"3910-61",
       // "img_url": "",
       // "MATERIAL": "Titanium",
       // "IMPLANT_LENGTH": "8.3mm",
@@ -932,6 +932,7 @@ const Navigation = () => {
       {
         name: "90-S Cruise",
         // "pn": "0279401200",
+        id: "0279401200",
         // "suction": true,
         // "small_joint":false,
         // "length": "135 mm",
@@ -943,6 +944,7 @@ const Navigation = () => {
     {
            name: "90-S Accelerator",
           //  "pn": "0279351400",
+          id: "0279351400",
           //  "suction": true,
           //  "small_joint":false,
           //  "length": "135 mm",
@@ -954,6 +956,7 @@ const Navigation = () => {
     {
           name: "90-S Max",
           //  "pn": "0279401100",
+          id: "0279401100",
           //  "suction": true,
           //  "small_joint":false,
           //  "length": "135 mm",
@@ -966,6 +969,7 @@ const Navigation = () => {
         {
            name: "90-S",
           //  "pn": "0279351100",
+          id: "0279351100",
           //  "suction": true,
           //  "small_joint":false,
           //  "length": "135 mm",
@@ -977,6 +981,7 @@ const Navigation = () => {
         {
            name: "90-S XL",
           //  "pn": "0279350502",
+          id: "0279350502",
           //  "suction": true,
           //  "small_joint":false,
           //  "length": "180 mm",
@@ -988,6 +993,7 @@ const Navigation = () => {
         {
           name: "50-S",
           // "pn": "0279351250",
+          id: "0279351250",
           // "suction": true,
           // "small_joint":false,
           // "length": "135 mm",
@@ -999,6 +1005,7 @@ const Navigation = () => {
        {
           name: "50-S XL",
           // "pn": "0279351235",
+          id: "0279351235",
           // "suction": true,
           // "small_joint":false,
           // "length": "180 mm",
@@ -1010,6 +1017,7 @@ const Navigation = () => {
        {
           name: "30-S",
           // "pn": "0279351230",
+          id: "0279351230",
           // "suction": true,
           // "small_joint":false,
           // "length": "135 mm",
@@ -1021,6 +1029,7 @@ const Navigation = () => {
        {
           name: "50-S Sweep +",
           // "pn": "0279351650",
+          id: "0279351650",
           // "suction": true,
           // "small_joint":false,
           // "length": "135 mm",
@@ -1032,6 +1041,7 @@ const Navigation = () => {
        {
           name: "50-S Sweep + XL",
           // "pn": "0279351653",
+          id: "0279351653",
           // "suction": true,
           // "small_joint":false,
           // "length": "180 mm",
@@ -1046,6 +1056,7 @@ const Navigation = () => {
       {
         name: "Direct",
         // "pn": "0279350401",
+        id: "0279350401",
         // "suction": false,
         // "small_joint":false,
         // "length": "135 mm",
@@ -1057,6 +1068,7 @@ const Navigation = () => {
      {
         name: "Lat",
         // "pn": "0279350201",
+        id: "0279350201",
         // "suction": false,
         // "small_joint":false,
         // "length": "135 mm",
@@ -1068,6 +1080,7 @@ const Navigation = () => {
      {
         name: "Contour",
         // "pn": "0279350301",
+        id: "0279350301",
         // "suction": false,
         // "small_joint":false,
         // "length": "135 mm",
@@ -1079,6 +1092,7 @@ const Navigation = () => {
      {
         name: "Hook",
         // "pn": "0279350501",
+        id: "0279350501",
         // "suction": false,
         // "small_joint":false,
         // "length": "135 mm",
@@ -1090,6 +1104,7 @@ const Navigation = () => {
      {
         name: "Hook XL",
         // "pn": "0279351103",
+        id: "0279351103",
         // "suction": false,
         // "small_joint":false,
         // "length": "180 mm",
@@ -1103,6 +1118,7 @@ const Navigation = () => {
       {
         name: "Aardvark",
         // "pn": "0279251101",
+        id: "0279251101",
         // "suction": null,
         // "small_joint":true,
         // "length": "135 mm",
@@ -1114,6 +1130,7 @@ const Navigation = () => {
       {
         name: "Micro-Claw",
         // "pn": "0279250101",
+        id: "0279250101",
         // "suction": null,
         // "small_joint":true,
         // "length": "135 mm",
@@ -1125,6 +1142,7 @@ const Navigation = () => {
      {
         name: "Micro-Brush",
         // "pn": "0279250201",
+        id: "0279250201",
         // "suction": null,
         // "small_joint":true,
         // "length": "135 mm",
@@ -1135,24 +1153,12 @@ const Navigation = () => {
      }], id: 2}
 ]}])
 
-const handleBtnClick = (e) => {
-  const navigationItemItemsText = document.getElementsByClassName('navigation_item__items_text')
 
-  for (let item of navigationItemItemsText) {
-    if (item.classList.contains('clicked')) {
-      item.classList.remove('clicked')
-
-    }
-  }
-
-  e.currentTarget.classList.toggle('clicked')
-  // console.log(e.currentTarget)
-
-}
 
   return (
     <div className='navigation__container'>
-      <NavigationComponent handleBtnClick={handleBtnClick} features={features} />
+      <NavigationComponent 
+        features={features} />
     </div>
   )
 }

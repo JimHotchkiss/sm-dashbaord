@@ -11,7 +11,7 @@ const NavigationItem = ({ name, categories, handleBtnClick }) => {
 
   return (
     <div className='navigation_item__container'>
-        <div onClick={(e) => handleClick(e)}  className='navigation_item__text_chevron_div'>
+        <div onClick={handleClick}  className='navigation_item__text_chevron_div'>
             <div className='navigation_item__text'>
                 <p>{name}</p>
             </div>
@@ -23,6 +23,7 @@ const NavigationItem = ({ name, categories, handleBtnClick }) => {
                     onClick={handleBtnClick}
                     key={Math.random()} 
                     className='navigation_item__items_text'>
+                        {console.log(category)}
                     <p>{category.name}</p>
                 </div>
             ))}
