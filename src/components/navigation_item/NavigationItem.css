@@ -82,12 +82,12 @@
     /* transition: all 0.3s ease-in-out;  */
 }
 
-.navigation_item__items_text.clicked{
+.navigation_item__items_text.item_clicked{
     background-color: var(--color-3);
     transition: all 0.3s ease-in-out; 
 }
 
-.navigation_item__items_text.clicked P{
+.navigation_item__items_text.item_clicked P{
     color: #fff;
     transition: all 0.3s ease-in-out; 
 }
