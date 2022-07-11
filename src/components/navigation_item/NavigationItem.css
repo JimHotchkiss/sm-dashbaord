@@ -69,17 +69,17 @@
     background-color: var(--color-5);
     border-radius: 5px;
     cursor: pointer;
-    /* transition: all 0.3s ease-in-out;  */
+    transition: all 0.3s ease-in-out; 
 }
 
 .navigation_item__items_text:hover{
     background-color: var(--color-3);
-    /* transition: all 0.3s ease-in-out;  */
+    transition: all 0.3s ease-in-out; 
 }
 
 .navigation_item__items_text:hover p{
     color: #fff;
-    /* transition: all 0.3s ease-in-out;  */
+    transition: all 0.3s ease-in-out; 
 }
 
 .navigation_item__items_text.item_clicked{

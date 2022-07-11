@@ -4,7 +4,7 @@ import NavigationComponent from '../../components/navigation_component/Navigatio
 
 
 
-const Navigation = () => {
+const Navigation = ({handleItemBtnClick, itemBtn, setItemBtn}) => {
 
   const [features, setFeatures] = useState([
     { 
@@ -1157,8 +1157,14 @@ const Navigation = () => {
 
   return (
     <div className='navigation__container'>
-      <NavigationComponent 
+      <NavigationComponent
+        // handleNavigationClick={handleNavigationClick}
+        // navigationClick={navigationClick}
+        handleItemBtnClick={handleItemBtnClick} 
+        itemBtn={itemBtn}
+        setItemBtn={setItemBtn}
         features={features} />
+        {console.log(itemBtn)}
     </div>
   )
 }
