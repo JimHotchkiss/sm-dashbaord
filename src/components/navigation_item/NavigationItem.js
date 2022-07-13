@@ -8,9 +8,8 @@ const [navigationClick, setNavigationClick] = useState(false)
 const [itemBtn, setItemBtn] = useState({itemBtnId:"", clickStatus:false})
 
     const handleNavigationClick = () => {
-        console.log(itemBtn)
+        setItemBtn({itemBtnId: "", clickStatus: false})
        setNavigationClick(!navigationClick)
-       setItemBtn({itemBtnId: "", clickStatus: false})
     }
 
     const handleItemBtnClick = (e, categoryId) => {

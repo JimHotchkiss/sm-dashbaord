@@ -161,7 +161,7 @@ const Navigation = ({handleItemBtnClick, itemBtn, setItemBtn}) => {
   {
     name: "ICONIX SPEED Triple Loaded 1.2 mm Xbraid TT",
     // "pn": "3910-500-931",
-    // id:"3910-11",
+    id:"3910-11",
     // "img_url": "",
     // "MATERIAL": "Polyester Suture (UHMWPE)",
     // "IMPLANT_LENGTH": "12mm \n(8mm  deployed)",
@@ -175,7 +175,7 @@ const Navigation = ({handleItemBtnClick, itemBtn, setItemBtn}) => {
   {
     name: "ICONIX SPEED Double Loaded 2.0mm Xbraid TT",
     // "pn": "3910-500-920",
-    // id:"3910-12",
+    id:"3910-12",
     // "img_url": "",
     // "MATERIAL": "Polyester Suture (UHMWPE)",
     // "IMPLANT_LENGTH": "12mm \n(8mm  deployed)",
@@ -189,7 +189,7 @@ const Navigation = ({handleItemBtnClick, itemBtn, setItemBtn}) => {
   {
     name: "ICONIX SPEED Double Loaded #2 Force Fiber",
     // "pn": "3910-500-922",
-    // id:"3910-13",
+    id:"3910-13",
     // "img_url": "",
     // "MATERIAL": "Polyester Suture (UHMWPE)",
     // "IMPLANT_LENGTH": "12mm \n(8mm  deployed)",
@@ -203,7 +203,7 @@ const Navigation = ({handleItemBtnClick, itemBtn, setItemBtn}) => {
   {
     name: "ICONIX SPEED Combo 1.2mm & 2.0mm Xbraid TT",
     // "pn": "3910-500-921",
-    // id:"3910-14",
+    id:"3910-14",
     // "img_url": "",
     // "MATERIAL": "Polyester Suture (UHMWPE)",
     // "IMPLANT_LENGTH": "12mm \n(8mm  deployed)",
