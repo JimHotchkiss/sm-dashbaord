@@ -2,7 +2,7 @@ import React from 'react'
 import NavigationTitle from '../navigation_title/NavigationTitle'
 import NavigationItem from '../navigation_item/NavigationItem'
 
-const NavigationComponent = ({ features, showTable, setShowTable}) => {
+const NavigationComponent = ({ features, handleItemBtnClick, handleNavigationClick, itemBtn, navigationClick}) => {
   return (
     <div className='navigation_component__container'>
         {features.map((feature) => (
@@ -12,9 +12,14 @@ const NavigationComponent = ({ features, showTable, setShowTable}) => {
                 </div>
                 {feature.productList.map((productItem) => (
                     <div className='navigation_item_div' key={Math.random()}>
+                        {console.log(productItem.productName, navigationClick['navigationProductId'])}
                          <NavigationItem 
-                            showTable={showTable}
-                            setShowTable={setShowTable}
+                            productItemId={productItem.productName}
+                            handleItemBtnClick={handleItemBtnClick}
+                            handleNavigationClick={handleNavigationClick}
+                            itemBtn={itemBtn}
+                            chevronClassName={navigationClick ? 'navigation_item__chevron' : 'navigation_item__chevron_rotate'}
+                            itemClassName={navigationClick['navigationProductId'] === productItem.productName  ? 'navigation_item__items_show' : 'navigation_item__items_hide'}
                             categories={productItem.categories} 
                             name={productItem.productName}/>
                     </div>
