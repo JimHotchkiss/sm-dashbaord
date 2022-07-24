@@ -4,26 +4,7 @@ import NavigationItem from '../navigation_item/NavigationItem'
 
 const NavigationComponent = ({ features, handleItemBtnClick, handleNavigationClick, itemBtn, navigationClick}) => {
 
-const chevron = {
-        height: "18px",
-        width: "18px",
-        marginTop: "10px",
-        marginLeft: "auto",
-        // background: "transparent url('./images/icon-arrow.svg') 0% 0% no-repeat padding-box",
-        backgroundSize: "18px",
-        transition: "all 0.3s linear"
-        }
 
-const rotateChevron = {
-            height: "18px",
-            width: "18px",
-            marginTop: "10px",
-            marginLeft: "auto",
-            // background: "transparent url('./images/icon-arrow.svg') 0% 0% no-repeat padding-box",
-            backgroundSize: "18px",
-            transition: "all 0.3s linear",
-            transform: "rotate(-0.5turn)"
-            }
 
  
     return (
@@ -36,9 +17,9 @@ const rotateChevron = {
                 {feature.productList.map((productItem) => (
                     <div className='navigation_item_div' key={Math.random()}>
                          <NavigationItem 
-                            chevronStyle={navigationClick['navigationProductClicKStatus'] && navigationClick['navigationProductId'] === productItem.productName ? rotateChevron : chevron}
                             productItemId={productItem.productName}
                             handleItemBtnClick={handleItemBtnClick}
+                            navigationClick={navigationClick}
                             handleNavigationClick={handleNavigationClick}
                             itemBtn={itemBtn}
                             chevronClassName={navigationClick['navigationProductClicKStatus'] && navigationClick['navigationProductId'] === productItem.productName ? 'navigation_item__chevron_rotate' : 'navigation_item__chevron'}

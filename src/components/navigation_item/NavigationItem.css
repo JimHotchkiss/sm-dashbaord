@@ -24,13 +24,13 @@
     margin-left: 12px;
 }
 
-.navigation_item__chevron {
+/* .navigation_item__chevron {
     background: transparent url(./images/icon-arrow.svg) 0% 0% no-repeat padding-box;
 }
 
 .navigation_item__chevron_rotate {
     background: transparent url(./images/icon-arrow.svg) 0% 0% no-repeat padding-box;
-}
+} */
 
 .navigation_item__items_show {
     overflow-y: hidden;
