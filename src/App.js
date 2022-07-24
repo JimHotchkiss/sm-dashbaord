@@ -4,6 +4,7 @@ import Header from './components/header/Header'
 import Sidebar from './components/sidebar/Sidebar';
 import Navigation from './containers/navigation/Navigation';
 import Table from './containers/table/Table';
+import './components/navigation_item/NavigationItem.css'
 
 function App() {
 
@@ -1161,15 +1162,22 @@ const [itemBtn, setItemBtn] = useState({itemBtnId:"", clickStatus:false})
 const [navigationClick, setNavigationClick] = useState({navigationProductId:"", navigationProductClicKStatus: false})
 
     const handleNavigationClick = (e) => {
-      const productId = e.target.dataset.id
+      let  navigationCategory
+      if (e.currentTarget.dataset.id === navigationClick['navigationProductId']){
+        navigationCategory = ''
+        
+      } else {
+        navigationCategory = e.currentTarget.dataset.id
+      }
         setItemBtn({itemBtnId: "", clickStatus: false})
-        setNavigationClick({navigationProductId: productId, navigationProductClicKStatus: true})
+        setNavigationClick({navigationProductId: navigationCategory, navigationProductClicKStatus: !navigationClick['navigationProductClicKStatus']})
     }
 
     const handleItemBtnClick = (e, categoryId) => {
         if (itemBtn['itemBtnId'] === categoryId && itemBtn['clickStatus'] === true ) {
             setItemBtn({itemBtnId: "", clickStatus: false})
         } else {
+            setShowTable(!showTable)
             setItemBtn({itemBtnId: categoryId, clickStatus: true})
         }
         

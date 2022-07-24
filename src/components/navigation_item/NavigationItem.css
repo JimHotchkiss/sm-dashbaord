@@ -25,24 +25,11 @@
 }
 
 .navigation_item__chevron {
-    height: 18px;
-    width: 18px;
-    margin-top: 10px;
-    margin-left: auto;
     background: transparent url(./images/icon-arrow.svg) 0% 0% no-repeat padding-box;
-    background-size: 18px;
-    transition: all 0.3s linear;
 }
 
 .navigation_item__chevron_rotate {
-    height: 18px;
-    width: 18px;
-    margin-top: 10px;
-    margin-left: auto;
     background: transparent url(./images/icon-arrow.svg) 0% 0% no-repeat padding-box;
-    background-size: 18px;
-    transition: all 0.3s linear;
-    transform: rotate(-0.5turn)
 }
 
 .navigation_item__items_show {

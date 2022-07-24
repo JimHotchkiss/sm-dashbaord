@@ -1,28 +1,11 @@
-import {React, useState} from 'react'
+import {React} from 'react'
 import './NavigationItem.css'
-
-const NavigationItem = ({ name, categories, itemClassName, chevronClassName, handleItemBtnClick, handleNavigationClick, itemBtn, productItemId}) => {
-
-
-// const [navigationClick, setNavigationClick] = useState(false)
-// const [itemBtn, setItemBtn] = useState({itemBtnId:"", clickStatus:false})
-
-//     const handleNavigationClick = () => {
-//         setItemBtn({itemBtnId: "", clickStatus: false})
-//        setNavigationClick(!navigationClick)
-//     }
-
-//     const handleItemBtnClick = (e, categoryId) => {
-//         if (itemBtn['itemBtnId'] === categoryId && itemBtn['clickStatus'] === true ) {
-//             setItemBtn({itemBtnId: "", clickStatus: false})
-//         } else {
-//             setItemBtn({itemBtnId: categoryId, clickStatus: true})
-//         }
-        
-//     }
+import {CSSTransition} from 'react-transition-group';
 
 
 
+const NavigationItem = ({ name, categories, itemClassName, chevronClassName, handleItemBtnClick, handleNavigationClick, itemBtn, productItemId, chevronStyle}) => {
+  
   return (
     <div className='navigation_item__container'>
         <div 
@@ -32,7 +15,9 @@ const NavigationItem = ({ name, categories, itemClassName, chevronClassName, han
             <div className='navigation_item__text'>
                 <p data-id={productItemId}>{name}</p>
             </div>
-            <div className={chevronClassName}></div>
+            <div 
+                className={chevronClassName}
+                style={chevronStyle}></div>
         </div>
         <div className={itemClassName}>
             {categories.map((category) => (
