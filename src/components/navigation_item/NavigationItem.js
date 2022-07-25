@@ -1,31 +1,10 @@
-import {React} from 'react'
+import { React } from 'react'
 import './NavigationItem.css'
-import Chevron from './images/icon-arrow.svg'
 
 
 
-const NavigationItem = ({ name, categories, itemClassName, chevronClassName, handleItemBtnClick, handleNavigationClick, itemBtn, productItemId, navigationClick}) => {
-  
-    // const chevron = {
-    //     height: "18px",
-    //     width: "18px",
-    //     marginTop: "10px",
-    //     marginLeft: "auto",
-    //     // background: "transparent url('./images/icon-arrow.svg') 0% 0% no-repeat padding-box",
-    //     backgroundSize: "18px",
-    //     transition: "all 0.3s linear"
-    //     }
+const NavigationItem = ({ name, categories, itemClassName, handleItemBtnClick, handleNavigationClick, itemBtn, productItemId, navigationClick, chevron}) => {
 
-// const rotateChevron = {
-//             height: "18px",
-//             width: "18px",
-//             marginTop: "10px",
-//             marginLeft: "auto",
-//             // background: "transparent url('./images/icon-arrow.svg') 0% 0% no-repeat padding-box",
-//             backgroundSize: "18px",
-//             transition: "all 0.3s linear",
-//             transform: "rotate(-0.5turn)"
-//             }
   return (
     <div className='navigation_item__container'>
         <div 
@@ -36,18 +15,7 @@ const NavigationItem = ({ name, categories, itemClassName, chevronClassName, han
                 <p data-id={productItemId}>{name}</p>
             </div>
             {console.log(navigationClick['navigationProductClicKStatus'])}
-            <div 
-                style={{
-                    height: "18px",
-                    width: "18px",
-                    marginTop: "10px",
-                    marginLeft: "auto",
-                    background: `transparent url(${Chevron}) 0% 0% no-repeat padding-box`,
-                    backgroundSize: "18px",
-                    transition: navigationClick['navigationProductClicKStatus'] ? "transform 20s linear" : null,
-                    transform: navigationClick['navigationProductClicKStatus'] ? "rotate(-0.5turn)" : null,
-                    
-                }}></div>
+            <div className={chevron}></div>
         </div>
         <div className={itemClassName}>
             {categories.map((category) => (

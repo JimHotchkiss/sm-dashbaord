@@ -22,7 +22,7 @@ const NavigationComponent = ({ features, handleItemBtnClick, handleNavigationCli
                             navigationClick={navigationClick}
                             handleNavigationClick={handleNavigationClick}
                             itemBtn={itemBtn}
-                            chevronClassName={navigationClick['navigationProductClicKStatus'] && navigationClick['navigationProductId'] === productItem.productName ? 'navigation_item__chevron_rotate' : 'navigation_item__chevron'}
+                            chevron={navigationClick['navigationProductClicKStatus'] && navigationClick['navigationProductId'] === productItem.productName ? 'chevron_rotate' : 'chevron'}
                             itemClassName={navigationClick['navigationProductId'] === productItem.productName ? 'navigation_item__items_show' : 'navigation_item__items_hide'}
                             categories={productItem.categories} 
                             name={productItem.productName}/>

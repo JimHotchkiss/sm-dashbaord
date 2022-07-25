@@ -24,13 +24,26 @@
     margin-left: 12px;
 }
 
-/* .navigation_item__chevron {
-    background: transparent url(./images/icon-arrow.svg) 0% 0% no-repeat padding-box;
+.chevron {
+   height: 18px;
+   width: 18px;
+   margin-top: 10px;
+   margin-left: auto;
+   background: transparent url('./images/icon-arrow.svg') 0% 0% no-repeat padding-box;
+   background-size: 18px;
+   transition: transform 20s linear;
 }
 
-.navigation_item__chevron_rotate {
-    background: transparent url(./images/icon-arrow.svg) 0% 0% no-repeat padding-box;
-} */
+.chevron_rotate {
+    height: 18px;
+    width: 18px;
+    margin-top: 10px;
+    margin-left: auto;
+    background: transparent url('./images/icon-arrow.svg') 0% 0% no-repeat padding-box;
+    background-size: 18px;
+    transition: transform 20s linear;
+    transform: rotate(-0.5turn);
+}
 
 .navigation_item__items_show {
     overflow-y: hidden;
